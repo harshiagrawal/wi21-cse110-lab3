@@ -47,6 +47,26 @@
             <li>Going to the beach</li>
             <li>Cooking</li>
           </ol>
+          
+          <p> One of my favorite songs to listen to (even though it is a major throwback is Pocketful of Sunshine. If you have not heard it, here it is: </p>
+          <figure>
+             <figcaption>Listen to the T-Rex:</figcaption>
+             <audio
+                controls
+                src="Natasha Bedingfield - Pocketful of Sunshine (Official Video).mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio>
+          </figure>
+          
+          <p> Here is the music video if you are interested: </p>
+          <video controls width="250">
+
+            <source src="videoplayback.mp4"
+            type="video/mp4">
+
+            Sorry, your browser doesn't support embedded videos.
+          </video>
          
         </section>
         <section>
@@ -61,7 +81,15 @@
           <h3> WIC Summer Project: </h3>
           <p> As a part of board, I decided to take part in redesigning and coding the website over the summer. 
           It allowed me to learn front end languages such as JavaScript and practice git commands such as <code> git status </code>.
-          It also gave me the opportunity to bond more with my fellow board members who had also volunteered, so it was overall a great experience. </p>
+          It also gave me the opportunity to bond more with my fellow board members who had also volunteered, so it was overall a great experience.
+          Here is a screenshot of what the front page of our site looks like: </p>
+          <picture>
+            <img src="WICsite.png" alt="WIC site" width="200" height="200">
+          </picture>
+          
+          <p> Here is the website as part of an iframe element: </p>
+          <iframe src="https://wic.ucsd.edu/" title="WIC @ UCSD">
+          </iframe>
         </section>
         
         <hr>
@@ -69,8 +97,26 @@
         <div>
           <h2> Delta Gamma: </h2>
           <p> I truly love my sorority and this is how happy it makes me to be surrounded by other strong women: </p> <pre> \(^o^)/ </pre>
-          
+          <p> The main values that I really connect with are professionalism, friendship, and promoting cultural interests. </p>
         </div>
+        
+        <h2> Computer Science Practice: </h2>
+        <p> In CS, it is important to practice your skills in order to get better. This is where I am going to practice a couple of skills. </p>
+        <h3> Creating a svg element: </h3>
+        <svg width="50" height="50">
+          <circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="green" />
+          Sorry, your browser does not support inline SVG.
+        </svg>
+        
+        <h3> Creating a canvas element but with a rectangle: </h3>
+        <canvas id="canvas">Your browser does not support the canvas tag.</canvas>
+        <script>
+          var c = document.getElementById("canvas");
+          var ctx = c.getContext("2d");
+          ctx.fillStyle = "#00FF00";
+          ctx.fillRect(0, 0, 20, 50);
+        </script>
+        
         
       </main>
       
