@@ -75,7 +75,7 @@
           represent our organization as welcoming and warm. I love being part of WIC on campus, so I wanted to go more in depth about it. 
           Something I am <i>very very </i> passionate about is diversity, especially in the tech industry. Being a woman <b class="term">AND</b> a minority in this field, 
           I strive to inspire other young women to not be intimidated. Something I really want to emphasize is to <strong> never give up</strong>. 
-          With these motives, I knew I <em> had </em> to join WIC> I want to be a part of a community that understands what it is like to be in a minority group and be able to support one another in this journey. 
+          With these motives, I knew I <em> had </em> to join WIC. I want to be a part of a community that understands what it is like to be in a minority group and be able to support one another in this journey. 
           Women in Computing has allowed me to do that. I love to talk to others and give advice on how to get internships, how to network, and how to be successful in your career.</p>
           
           <h3> WIC Summer Project: </h3>
@@ -90,6 +90,36 @@
           <p> Here is the website as part of an iframe element: </p>
           <iframe src="https://wic.ucsd.edu/" title="WIC @ UCSD">
           </iframe>
+          
+          <h3> WIC Hours: </h3>
+          <p> Over the past year, I have spent a lot of time in WIC, whether that was going to meetings or planning events. Here is a table that shows 
+          approximately how many hours I spent each quarter on WIC related things: </p>
+          
+          <table>
+            <caption> Hours spent per quarter for WIC </caption>
+            <colgroup>
+              <col span="2" style="background-color:purple">
+            </colgroup>
+            <tr>
+              <td> </td>
+              <th scope="col" class="Quarter">Quarter</th>
+              <th scope="col" class="Hours">Hours</th>
+            </tr>
+            <tbody>
+               <tr>
+                  <td>Spring '20</td>
+                  <td>15</td>
+              </tr>
+              <tr>
+                  <td>Fall '20</td>
+                  <td>20</td>
+              </tr>
+              <tr>
+                  <td>Winter '21</td>
+                  <td>TBD</td>
+              </tr>
+          </tbody>
+          </table>
         </section>
         
         <hr>
@@ -114,7 +144,7 @@
             <fieldset>
               <legend> Fun Stuff: </legend>
             <label for="birthday">Birthday(month & year): </label>
-            <input type="month" id="birthday" name="birthday">
+            <input type="month" id="birthday" name="birthday"><br><br>
             <label for="pictureFile">Upload a picture of yourself:</label>
             <input type="file" id="pictureFile" name="pictureFile"><br><br>
             </fieldset> 
@@ -170,19 +200,18 @@
           <input type="time" id="siteTime" name="siteTime"><br><br>
           <label for="Color">Select your favorite color:</label>
           <input type="color" id="Color" name="Color" value="#f00000"><br><br>
+          <label for="active">How often do you workout?:</label>
+          <input list="activity" name="active" id="active">
+
+          <datalist id="activity">
+            <option value="Never">
+            <option value="Sometimes (~3x every couple of weeks)">
+            <option value="Often (~3x a week)">
+            <option value="Everyday">
+          </datalist>
           <input type="reset" value="Reset">
           <input type="submit">
         </form>
-        
-        <label for="active">How often do you workout?:</label>
-        <input list="activity" name="active" id="active">
-
-        <datalist id="activity">
-          <option value="Never">
-          <option value="Sometimes (~3x every couple of weeks)">
-          <option value="Often (~3x a week)">
-          <option value="Everyday">
-        </datalist>
         
         
       </main>
