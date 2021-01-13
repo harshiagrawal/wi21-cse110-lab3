@@ -50,7 +50,7 @@
           
           <p> One of my favorite songs to listen to (even though it is a major throwback is Pocketful of Sunshine. If you have not heard it, here it is: </p>
           <figure>
-             <figcaption>Listen to the T-Rex:</figcaption>
+             <figcaption>Listen to Pocketful of Sunshine:</figcaption>
              <audio
                 controls
                 src="Natasha Bedingfield - Pocketful of Sunshine (Official Video).mp3">
@@ -97,7 +97,29 @@
         <div>
           <h2> Delta Gamma: </h2>
           <p> I truly love my sorority and this is how happy it makes me to be surrounded by other strong women: </p> <pre> \(^o^)/ </pre>
-          <p> The main values that I really connect with are professionalism, friendship, and promoting cultural interests. </p>
+          <p> The main values that I really connect with are professionalism, friendship, and promoting cultural interests. If you are interested in 
+          possibly joining Greek Life, most of the sorority and fraternities on campus are recruiting. Fill out this form if you want to get more info: </p>
+          <form action="" method="get">
+            <fieldset>
+              <legend>Personal Info:</legend>
+            <label for="name"> Full Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="emailAdd">Email: </label>
+            <input type="email" id="emailAdd" name="emailAdd"><br><br>
+            <label for="Facebook">Link to your Facebook account: </label>
+            <input type="url" id="Facebook" name="Facebook"><br><br>
+            <label for="number">Phone number: </label>
+            <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            </fieldset>
+            <fieldset>
+              <legend> Fun Stuff: </legend>
+            <label for="birthday">Birthday(month & year): </label>
+            <input type="month" id="birthday" name="birthday">
+            <label for="pictureFile">Upload a picture of yourself:</label>
+            <input type="file" id="pictureFile" name="pictureFile"><br><br>
+            </fieldset> 
+            <input type="submit">
+          </form>
         </div>
         
         <h2> Computer Science Practice: </h2>
@@ -113,9 +135,54 @@
         <script>
           var c = document.getElementById("canvas");
           var ctx = c.getContext("2d");
-          ctx.fillStyle = "#00FF00";
+          ctx.fillStyle = "#FFC0CB";
           ctx.fillRect(0, 0, 20, 50);
         </script>
+        
+        <h3> Practicing with text areas: </h3>
+        <p> I am going to write a short poem to practice using text areas: </p>
+        <label for="textArea">Practice of text areas:</label>
+        <textarea id="textArea" name="textArea" rows="2" cols="25">
+          This is the area where I am practicing implementing a text area in HTML. This is an element required to complete Lab 2 Part 1 for CSE 110.
+        </textarea>
+        
+        <h2> Getting Stats: </h2>
+        <p> Since you came to my site, I am wanting to check some statistics, so I am curious to learn more information about you! Fill out this form
+          to help me gather data on who has visited my site: </p>
+        <form action="" method="get">
+          <label for="genderRace">Gender & Race:</label>
+          <select id="genderRace">
+            <optgroup label="Gender">
+              <option>Female</option>
+              <option>Male</option>
+              <option>Prefer not to say</option>
+            </optgroup> 
+            <optgroup label="Race">
+              <option>White</option>
+              <option>Hispanic or Latino</option>
+              <option>African American</option>
+              <option>Asian</option>
+              <option>American Indian or Alaska Native</option>
+              <option>Other</option>
+            </optgroup>
+          </select><br><br>
+          <label for="siteTime">What time did you arrive on the site:</label>
+          <input type="time" id="siteTime" name="siteTime"><br><br>
+          <label for="Color">Select your favorite color:</label>
+          <input type="color" id="Color" name="Color" value="#f00000"><br><br>
+          <input type="reset" value="Reset">
+          <input type="submit">
+        </form>
+        
+        <label for="active">How often do you workout?:</label>
+        <input list="activity" name="active" id="active">
+
+        <datalist id="activity">
+          <option value="Never">
+          <option value="Sometimes (~3x every couple of weeks)">
+          <option value="Often (~3x a week)">
+          <option value="Everyday">
+        </datalist>
         
         
       </main>
