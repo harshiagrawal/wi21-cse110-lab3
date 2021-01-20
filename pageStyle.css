@@ -8,6 +8,12 @@
   justify-content: flex-start;
 }
 
+@media screen and (min-width: 500px) {
+  body {
+    background-color: lightpink;
+  }
+}
+
 #textArea{
   text-align: center;
 }
