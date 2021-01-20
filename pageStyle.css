@@ -28,6 +28,11 @@ a:hover {
 
 a{
   text-decoration: none;
+  display: block;
+}
+
+li{
+  display: inline;
 }
 
 div h2{
@@ -48,6 +53,7 @@ div ~ p {
 
 h1, h3{
   background-color: rgb(255,0,255);
+  position: static;
 }
 
 h2{
@@ -58,6 +64,8 @@ h3{
   font-size: 5vmin;
   height: 50px;
   width: 400px;
+  max-width: 500%;
+  min-width: 50%;
 }
 
 p.intro {
@@ -87,5 +95,9 @@ p.marginPractice{
 
 p.musicVideo{
   margin: 5px 30px 30px 5px;
+}
+
+div{
+  position: relative;
 }
 
