@@ -1,0 +1,46 @@
+/* This is my css file for index.html */
+
+.sorority{
+  text-align: center;
+}
+
+#textArea{
+  text-align: center;
+}
+
+*{
+  color: purple;
+}
+
+p{
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+div h2{
+  background-color: pink;
+}
+
+div > p {
+  color: hsla(290,60%,70%,0.3);
+}
+
+div + p {
+  color: hsl(120, 100%, 50%);
+}
+
+div ~ p {
+  text-color: #0000ff; /* blue color for siblings of div elements */
+}
+
+h1, h3{
+  background-color: rgb(255,0,255);
+}
+
+p.intro {
+  background-color: rgba(255,0,255, 0.3);
+}
+
