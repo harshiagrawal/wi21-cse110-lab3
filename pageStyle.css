@@ -26,6 +26,10 @@ a:hover {
   color: red;
 }
 
+a:active {
+  background-color: yellow;
+}
+
 a{
   text-decoration: none;
   display: block;
